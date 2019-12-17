@@ -3,8 +3,9 @@
 	email = todormihai@gmail.com
 [alias]
 	co = checkout
+	sw = switch
 	recbr = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-    rebase-commits = "!f() { git log --reverse --oneline --abbrev-commit --no-decorate \"$1\"..HEAD; }; f"
+	rebase-commits = "!f() { git log --reverse --oneline --abbrev-commit --no-decorate \"$1\"..HEAD; }; f"
 [push]
 	default = current
 [color "diff"]

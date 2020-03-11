@@ -1,5 +1,5 @@
 # Install dependencies (manually)
-# > brew install bash-completion the_silver_searcher gnupg git go python3
+# > brew install bash-completion the_silver_searcher gnupg git go python3 broot
 # > gpg --gen-key # Use output from `git config user.name` and `git config user.email`
 # > gpg --list-keys --keyid-format SHORT
 # > git config --global user.signingkey <pub_key_id>
@@ -32,3 +32,6 @@ alias agcpp='ag -G "[ch]\+\+$"'
 export GOPATH="${HOME}/Projects/go"
 export PATH="${PATH}:${GOPATH}/bin"
 export GO111MODULE=on
+
+# Broot
+source "${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"

@@ -22,6 +22,8 @@ export GPG_TTY=$(tty)
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\$ "'
+## For some reason, setting this in .gitconfig doesn't work
+#export LESS="-r"
 alias g='git'
 __git_complete g _git
 

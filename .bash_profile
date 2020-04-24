@@ -37,3 +37,6 @@ export GO111MODULE=on
 
 # Broot
 source "${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+
+# Minikube
+alias minidocker='eval $(minikube docker-env)'

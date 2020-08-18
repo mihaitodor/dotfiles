@@ -1,10 +1,12 @@
 # Install dependencies (manually)
 # > brew install bash-completion the_silver_searcher gnupg git go python3 broot
+# > ssh-keygen -t rsa -b 4096
+# > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys
 # > gpg --gen-key # Use output from `git config user.name` and `git config user.email`
 # > gpg --list-keys --keyid-format SHORT
 # > git config --global user.signingkey <pub_key_id>
 # > git config --global commit.gpgsign true
-# > gpg --armor --export <pub_key_id> # Paste the output in https://github.com/settings/keys
+# > gpg --armor --export <pub_key_id> # Paste the output in https://github.com/settings/keys -> GPG keys
 
 # Bash history size
 export HISTSIZE=10000000

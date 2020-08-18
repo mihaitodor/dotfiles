@@ -18,3 +18,5 @@
 	program = gpg
 [core]
 	pager = less -+FX
+[pull]
+	ff = only

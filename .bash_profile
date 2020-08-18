@@ -39,4 +39,6 @@ export GO111MODULE=on
 source "${HOME}/.config/broot/launcher/bash/br"
 
 # Minikube
+export MINIKUBE_CPUS=4
+export MINIKUBE_MEMORY=6144
 alias minidocker='eval $(minikube docker-env)'

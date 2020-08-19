@@ -1,4 +1,6 @@
 # Install dependencies (manually)
+# # Install iTerm2 from https://www.iterm2.com/
+# # In iTerm2 go to Settings > Advanced and change `Scroll wheel sends arrow keys when in alternate screen mode` to Yes
 # > brew install bash-completion the_silver_searcher gnupg git go python3 broot
 # > ssh-keygen -t rsa -b 4096
 # > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys
@@ -24,8 +26,6 @@ export GPG_TTY=$(tty)
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\$ "'
-## For some reason, setting this in .gitconfig doesn't work
-#export LESS="-r"
 alias g='git'
 __git_complete g _git
 

@@ -13,6 +13,9 @@
 # Bash history size
 export HISTSIZE=10000000
 
+# Hide stupid OSX bash deprecation warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # brew
 export PATH="/usr/local/sbin:${PATH}"
 

@@ -39,6 +39,16 @@ alias agcpp='ag -G "[ch]\+\+$"'
 export GOPATH="${HOME}/Projects/go"
 export PATH="${PATH}:${GOPATH}/bin"
 export GO111MODULE=on
+function goimports_all() {
+  # Usage: goimports_all excluded_dir1 excluded_dir2 ...
+
+  declare -a excluded_folders
+  for folder in "$@"; do
+    excluded_folders+=(-not -path "./${folder}/*")
+  done
+
+  find . -name \*.go "${excluded_folders[@]}" -exec goimports -w {} \;
+}
 
 # Broot
 source "${HOME}/.config/broot/launcher/bash/br"

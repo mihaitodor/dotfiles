@@ -7,6 +7,7 @@
 	recbr = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	rebase-commits = "!f() { git log --reverse --oneline --abbrev-commit --no-decorate \"$1\"..HEAD; }; f"
 	pushup = push --set-upstream
+	logstat = log --shortstat --oneline
 [push]
 	default = current
 [color "diff"]

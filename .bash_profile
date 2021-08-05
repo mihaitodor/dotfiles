@@ -30,7 +30,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\$ "'
 alias g='git'
-__git_complete g _git
+__git_complete g _git_main
 
 # The Silver Searcher
 alias agcpp='ag -G "[ch]\+\+$"'

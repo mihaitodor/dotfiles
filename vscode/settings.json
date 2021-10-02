@@ -52,6 +52,10 @@
         120
     ],
     "extensions.ignoreRecommendations": false,
-    "sqltools.telemetry": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "redhat.telemetry.enabled": false,
+    "go.delveConfig": {
+        "debugAdapter": "dlv-dap"
+    },
+    "editor.bracketPairColorization.enabled": true
 }

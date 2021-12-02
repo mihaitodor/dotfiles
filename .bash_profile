@@ -34,6 +34,7 @@ __git_complete g _git_main
 
 # The Silver Searcher
 alias agcpp='ag -G "[ch]\+\+$"'
+alias agg='ag --go'
 
 # Go
 export GOPATH="${HOME}/Projects/go"

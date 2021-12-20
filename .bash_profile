@@ -1,7 +1,7 @@
 # Install dependencies (manually)
 # # Install iTerm2 from https://www.iterm2.com/
 # # In iTerm2 go to Settings > Advanced and change `Scroll wheel sends arrow keys when in alternate screen mode` to Yes
-# > brew install bash-completion the_silver_searcher gnupg git go python3 broot dust homeport/tap/dyff jesseduffield/lazydocker/lazydocker
+# > brew install bash-completion the_silver_searcher gnupg git go python3 broot dust homeport/tap/dyff jesseduffield/lazydocker/lazydocker lazygit
 # > ssh-keygen -t rsa -b 4096
 # > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys
 # > gpg --default-new-key-algo rsa4096 --gen-key # Use output from `git config user.name` and `git config user.email`

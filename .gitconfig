@@ -22,3 +22,5 @@
 	pager = less -+FX
 [pull]
 	ff = only
+[init]
+	defaultBranch = main

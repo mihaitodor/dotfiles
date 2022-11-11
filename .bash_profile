@@ -38,9 +38,7 @@ alias agcpp='ag -G "[ch]\+\+$"'
 alias agg='ag --go'
 
 # Go
-export GOPATH="${HOME}/Projects/go"
-export PATH="${PATH}:${GOPATH}/bin"
-export GO111MODULE=on
+export PATH="${PATH}:$(go env GOPATH)/bin"
 function goimports_all() {
   # Usage: goimports_all excluded_dir1 excluded_dir2 ...
 

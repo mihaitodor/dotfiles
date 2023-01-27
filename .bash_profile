@@ -36,6 +36,7 @@ __git_complete g _git_main
 # The Silver Searcher
 alias agcpp='ag -G "[ch]\+\+$"'
 alias agg='ag --go'
+alias agp='ag --py'
 
 # Go
 export PATH="${PATH}:$(go env GOPATH)/bin"

@@ -56,8 +56,3 @@ source "${HOME}/.config/broot/launcher/bash/br"
 
 # Kubernetes
 alias k='kubectl'
-
-# Minikube
-export MINIKUBE_CPUS=4
-export MINIKUBE_MEMORY=6144
-alias minidocker='eval $(minikube docker-env)'

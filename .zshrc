@@ -58,6 +58,9 @@ function goimports_all() {
   find . -name \*.go "${excluded_folders[@]}" -exec goimports -w {} \;
 }
 
+# pipx
+export PATH=${HOME}/.local/bin:${PATH}
+
 # Broot
 source "${HOME}/.config/broot/launcher/bash/br"
 

@@ -64,5 +64,8 @@ export PATH=${HOME}/.local/bin:${PATH}
 # Broot
 source "${HOME}/.config/broot/launcher/bash/br"
 
+# Docker (Colima)
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+
 # Kubernetes
 alias k='kubectl'

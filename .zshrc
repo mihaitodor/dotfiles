@@ -13,9 +13,13 @@
 
 # Command history size
 export HISTSIZE=10000000
+export SAVEHIST=10000000
 
 # Hide stupid OSX bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Enable comments in interactive terminal
+setopt interactive_comments
 
 # Enable autocompletion
 autoload -Uz compinit && compinit

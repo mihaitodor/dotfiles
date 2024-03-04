@@ -11,9 +11,25 @@
 # > git config --global commit.gpgsign true
 # > gpg --armor --export <pub_key_id> # Paste the output in https://github.com/settings/keys -> GPG keys
 
-# Command history size
+# Command history
 export HISTSIZE=10000000
 export SAVEHIST=10000000
+setopt extended_history       # Write the history file in the ":start:elapsed;command" format
+setopt append_history         # Allow multiple parallel shells to append to the command history file
+setopt inc_append_history     # Immediately append to the history file, not just when a term is killed
+setopt share_history          # Share history across terminals
+setopt hist_expire_dups_first # Expire duplicate entries first when trimming history
+setopt hist_expire_dups_first # Expire duplicate entries first when trimming history
+setopt hist_find_no_dups      # Do not display a line previously found
+setopt hist_reduce_blanks     # Remove superfluous blanks before recording entry
+
+# Enhance zsh experience
+setopt complete_aliases # Tab complete commands even behind aliases
+setopt hist_verify      # Don't execute immediately upon history expansion when using `!...` to search for a previously-run command
+export DIRSTACKSIZE=8   # Depth of directory stack
+setopt auto_pushd       # Make the `cd` command push the previous dir onto dirstack
+setopt pushd_silent     # Don't print the dirstack when running the `cd` command
+setopt pushd_to_home    # Naked pushd (or cd with autopushd) takes you to the home dir
 
 # Hide stupid OSX bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1

@@ -17,7 +17,7 @@ export SAVEHIST=10000000
 setopt extended_history       # Write the history file in the ":start:elapsed;command" format
 setopt append_history         # Allow multiple parallel shells to append to the command history file
 setopt inc_append_history     # Immediately append to the history file, not just when a term is killed
-setopt share_history          # Share history across terminals
+#setopt share_history          # Share history across terminals
 setopt hist_expire_dups_first # Expire duplicate entries first when trimming history
 setopt hist_expire_dups_first # Expire duplicate entries first when trimming history
 setopt hist_find_no_dups      # Do not display a line previously found

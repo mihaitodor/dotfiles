@@ -45,7 +45,25 @@ export GPG_TTY=$(tty)
 
 # Git
 function parse_git_branch() {
-  ref=$(git rev-parse --abbrev-ref HEAD 2> /dev/null) || { echo " "; return }
+  # Try to fetch the current branch, if any
+  ref=$(git rev-parse --abbrev-ref HEAD 2> /dev/null) || true
+  if [[ "${ref}" == "HEAD" ]]; then
+    # If we're not on a branch, then try to fetch the current (latest) tag which matches the current commit
+    # If we can't find any tag for this commit, then return the current short SHA
+    ref=$(git describe --exact-match --tags 2> /dev/null || git rev-parse --short --verify HEAD 2> /dev/null) || true
+  fi
+
+  if [[ -z "${ref}" ]]; then
+    # Check if we're in a git repo which might be freshly-initialised and not contain any commits
+    if [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" == "true" ]]; then
+      echo " [#] "
+    else
+      echo " "
+    fi
+    # Bail out early if we couldn't find any ref
+    exit
+  fi
+
   if [[ -n $(git status -s -uno --ignore-submodules=dirty 2> /dev/null) ]]; then
     echo " [${ref} *] "
   else

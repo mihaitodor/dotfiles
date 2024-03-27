@@ -24,18 +24,16 @@ setopt hist_find_no_dups      # Do not display a line previously found
 setopt hist_reduce_blanks     # Remove superfluous blanks before recording entry
 
 # Enhance zsh experience
-setopt complete_aliases # Tab complete commands even behind aliases
-setopt hist_verify      # Don't execute immediately upon history expansion when using `!...` to search for a previously-run command
-export DIRSTACKSIZE=8   # Depth of directory stack
-setopt auto_pushd       # Make the `cd` command push the previous dir onto dirstack
-setopt pushd_silent     # Don't print the dirstack when running the `cd` command
-setopt pushd_to_home    # Naked pushd (or cd with autopushd) takes you to the home dir
+setopt complete_aliases     # Tab complete commands even behind aliases
+setopt hist_verify          # Don't execute immediately upon history expansion when using `!...` to search for a previously-run command
+export DIRSTACKSIZE=8       # Depth of directory stack
+setopt auto_pushd           # Make the `cd` command push the previous dir onto dirstack
+setopt pushd_silent         # Don't print the dirstack when running the `cd` command
+setopt pushd_to_home        # Naked pushd (or cd with autopushd) takes you to the home dir
+setopt interactive_comments # Enable comments in interactive terminal
 
-# Hide stupid OSX bash deprecation warning
+# Hide OSX bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
-# Enable comments in interactive terminal
-setopt interactive_comments
 
 # Enable autocompletion
 autoload -Uz compinit && compinit

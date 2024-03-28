@@ -1,7 +1,7 @@
 # Install dependencies (manually)
 # # Install iTerm2 from https://www.iterm2.com/
 # # In iTerm2 go to Settings > Advanced and change `Scroll wheel sends arrow keys when in alternate screen mode` to Yes
-# > brew install bash-completion coreutils gnu-tar gnu-sed the_silver_searcher fd ripgrep gnupg git go python3 pipx colima docker broot dust jless git-delta difftastic homeport/tap/dyff jesseduffield/lazydocker/lazydocker lazygit rustup glow
+# > brew install bash-completion coreutils gnu-tar gnu-sed the_silver_searcher fd ripgrep gnupg git go python3 pipx colima docker docker-compose broot dust jless git-delta difftastic homeport/tap/dyff jesseduffield/lazydocker/lazydocker lazygit rustup glow
 # > pipx install oshit
 # > ssh-keygen -t rsa -b 4096
 # > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys

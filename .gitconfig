@@ -20,6 +20,7 @@
 	program = gpg
 [core]
 	pager = less -+FX
+	excludesfile = ~/.gitignore_global
 [pull]
 	ff = only
 [init]

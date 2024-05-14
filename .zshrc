@@ -75,6 +75,10 @@ COLOR_GIT=$'%F{39}'
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n@%m ${COLOR_DIR}%~${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}%% '
 alias g='git'
+alias gd='git -c core.pager=delta -c delta.navigate=true'
+alias gdd='git -c core.pager=delta -c delta.side-by-side=true -c delta.navigate=true'
+# Fix trackpad scroll when using delta for diffs
+export DELTA_PAGER='less --mouse'
 
 # The Silver Searcher
 alias agcpp='ag -G "[ch]\+\+$"'

@@ -32,6 +32,9 @@ setopt pushd_silent         # Don't print the dirstack when running the `cd` com
 setopt pushd_to_home        # Naked pushd (or cd with autopushd) takes you to the home dir
 setopt interactive_comments # Enable comments in interactive terminal
 
+# Don't trim space when typing a `|` following tab completion
+export ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
+
 # Hide OSX bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 

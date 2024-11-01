@@ -89,7 +89,7 @@ alias agg='ag --go'
 alias agp='ag --py'
 
 # Go
-export PATH="${PATH}:$(go env GOPATH)/bin"
+export PATH="${PATH}:${HOME}/go/bin"
 function goimports_all() {
   # Usage: goimports_all excluded_dir1 excluded_dir2 ...
 

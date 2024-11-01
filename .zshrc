@@ -56,13 +56,13 @@ function parse_git_branch() {
 
   if [[ -z "${ref}" ]]; then
     # Check if we're in a git repo which might be freshly-initialised and not contain any commits
-    if [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" == "true" ]]; then
+    if [[ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" == "true" ]]; then
       echo " [#] "
     else
       echo " "
     fi
     # Bail out early if we couldn't find any ref
-    exit
+    return
   fi
 
   if [[ -n $(git status -s -uno --ignore-submodules=dirty 2> /dev/null) ]]; then

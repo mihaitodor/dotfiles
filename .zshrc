@@ -114,4 +114,4 @@ export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 alias k='kubectl'
 
 # Benthos
-alias benthos=redpanda-connect
+alias benthos='redpanda-connect'

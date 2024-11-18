@@ -14,6 +14,7 @@
         "--max-line-length=120"
     ],
     "cSpell.diagnosticLevel": "Hint",
+    "cSpell.useCustomDecorations": false,
     "cSpell.language": "en-GB",
     "cSpell.userWords": [
         "Enovy",

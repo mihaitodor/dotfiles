@@ -7,7 +7,7 @@
 # > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys
 # > gpg --default-new-key-algo rsa4096 --gen-key # Use output from `git config user.name` and `git config user.email`
 # > gpg --list-keys --keyid-format SHORT
-# > git config --global user.signingkey <pub_key_id>
+# > git config --global user.signingkey <pub_key_id> # This is optional if you only have one key configured
 # > git config --global commit.gpgsign true
 # > gpg --armor --export <pub_key_id> # Paste the output in https://github.com/settings/keys -> GPG keys
 

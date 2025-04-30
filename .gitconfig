@@ -1,6 +1,7 @@
 [user]
 	name = Mihai Todor
 	email = todormihai@gmail.com
+	signingkey = 00000000
 [alias]
 	br = branch
 	co = checkout

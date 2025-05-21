@@ -78,5 +78,8 @@
     "go.inlayHints.constantValues": true,
     "go.inlayHints.functionTypeParameters": true,
     "go.inlayHints.parameterNames": true,
-    "go.inlayHints.rangeVariableTypes": true
+    "go.inlayHints.rangeVariableTypes": true,
+    "gopls": {
+        "formatting.gofumpt": true
+    }
 }

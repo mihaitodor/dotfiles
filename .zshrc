@@ -80,6 +80,7 @@ export PROMPT='${COLOR_USR}%n@%m ${COLOR_DIR}%~${COLOR_GIT}$(parse_git_branch)${
 alias g='git'
 alias gd='git -c core.pager=delta -c delta.navigate=true'
 alias gdd='git -c core.pager=delta -c delta.side-by-side=true -c delta.navigate=true'
+alias gsb='g co $(g br | fzf)'
 # Fix trackpad scroll when using delta for diffs
 export DELTA_PAGER='less --mouse'
 

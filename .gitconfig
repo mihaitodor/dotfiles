@@ -1,7 +1,7 @@
 [user]
 	name = Mihai Todor
 	email = todormihai@gmail.com
-	signingkey = 00000000
+	signingkey = ~/.ssh/id_rsa.pub
 [alias]
 	br = branch
 	co = checkout
@@ -21,6 +21,9 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
 [core]
 	pager = less -+FX
 	excludesfile = ~/.gitignore_global

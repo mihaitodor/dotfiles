@@ -4,12 +4,8 @@
 # > brew install bash-completion coreutils gnu-tar gnu-sed telnet the_silver_searcher fd bat btop eza ripgrep jq yq gnupg git go gofumpt graphviz python3 uv ruff pipx colima docker docker-buildx docker-compose broot mc dua-cli dust jless gron fzf tokei oha git-delta difftastic homeport/tap/dyff jesseduffield/lazydocker/lazydocker lazygit rustup npm glow libpq pgcli kubectl kubie derailed/k9s/k9s helm dive mitmproxy sevenzip maccy
 # > pipx install oshit
 # > ssh-keygen -t rsa -b 4096
-# > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys
-# > gpg --default-new-key-algo rsa4096 --gen-key # Use output from `git config user.name` and `git config user.email`
-# > gpg --list-keys --keyid-format SHORT
-# > git config --global user.signingkey <pub_key_id> # This is optional if you only have one key configured
-# > git config --global commit.gpgsign true
-# > gpg --armor --export <pub_key_id> # Paste the output in https://github.com/settings/keys -> GPG keys
+# > cat .ssh/id_rsa.pub # Paste the output in https://github.com/settings/keys -> SSH keys for both authentication and signing
+# > echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_rsa.pub)" >> ~/.ssh/allowed_signers
 
 # Command history
 export HISTSIZE=10000000

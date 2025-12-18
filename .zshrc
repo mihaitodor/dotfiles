@@ -98,6 +98,9 @@ function goimports_all() {
   find . -name \*.go "${excluded_folders[@]}" -exec goimports -w {} \;
 }
 
+# Python
+alias uvsh='eval $(uv venv --allow-existing 2>&1 | tail -n 1 | sed "s/Activate with: //")'
+
 # pipx
 export PATH=${HOME}/.local/bin:${PATH}
 

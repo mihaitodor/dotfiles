@@ -100,6 +100,9 @@ function goimports_all() {
 # Python
 alias uvsh='eval $(uv venv --allow-existing 2>&1 | tail -n 1 | sed "s/Activate with: //")'
 
+# Postgres psql
+export PATH="${PATH}:/opt/homebrew/opt/libpq/bin"
+
 # pipx
 export PATH=${HOME}/.local/bin:${PATH}
 
